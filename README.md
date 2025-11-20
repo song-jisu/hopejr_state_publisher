@@ -29,7 +29,7 @@ colcon build --symlink-install
 
 Run:
 ```shell
-ros2 run hopejr_right_arm_description view_robot.launch.py
+ros2 launch hopejr_right_arm_description view_robot.launch.py
 ```
 
 <img width="944" height="574" alt="image" src="https://github.com/user-attachments/assets/e2035124-95c3-465c-8a3e-d783f1d35057" />
