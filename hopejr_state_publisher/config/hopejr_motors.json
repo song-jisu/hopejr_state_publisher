@@ -1,0 +1,213 @@
+{
+  "shoulder_pitch": {
+    "mapping": { "joint": "shoulder_pitch", "factor": 1.0, "offset": 0.0 },
+    "description": "Direct map to shoulder_pitch joint"
+  },
+  "shoulder_yaw": {
+    "mapping": { "joint": "shoulder_yaw", "factor": 1.0, "offset": 0.0 },
+    "description": "Direct map to shoulder_yaw joint"
+  },
+  "shoulder_roll": {
+    "mapping": { "joint": "shoulder_roll", "factor": 1.0, "offset": 0.0 },
+    "description": "Direct map to shoulder_roll joint"
+  },
+  "elbow_flex": {
+    "mapping": { "joint": "elbow_flex", "factor": 1.0, "offset": 0.0 },
+    "description": "Direct map to elbow_flex joint"
+  },
+  "wrist_roll": {
+    "mapping": { "joint": "wrist_roll", "factor": 1.0, "offset": 0.0 },
+    "description": "Direct map to wrist_roll joint"
+  },
+  "wrist_yaw": {
+    "mapping": { "joint": "wrist_yaw", "factor": 1.0, "offset": 0.0 },
+    "description": "Direct map to wrist_yaw joint"
+  },
+  "wrist_pitch": {
+    "mapping": { "joint": "hand_wrist_pitch", "factor": 1.0, "offset": 0.0 },
+    "description": "Direct map to hand_wrist_pitch joint"
+  },
+  "thumb_cmc": {
+    "mapping": { "joint": "hand_thumb_mcp_2", "factor": 1.0, "offset": 0.0 },
+    "description": "Direct map to hand_thumb_mcp_2"
+  },
+  "thumb_mcp": {
+    "min": 0.0,
+    "max": 1.0,
+    "default": 0.0,
+    "unit": "rad",
+    "mapping": {
+        "targets": [
+        { "joint": "hand_thumb_pip_1", "weight": 1.0 }
+      ]
+    },
+    "description": "thumb MCP maps to hand_thumb_pip_1"
+  },
+  "thumb_pip": {
+    "min": 0.0,
+    "max": 1.0,
+    "default": 0.0,
+    "unit": "rad",
+    "mapping": {
+        "targets": [
+        { "joint": "hand_thumb_pip_2", "weight": 1.0 }
+      ]
+    },
+    "description": "thumb PIP maps to hand_thumb_pip_2"
+  },
+  "thumb_dip": {
+    "min": 0.0,
+    "max": 1.0,
+    "default": 0.0,
+    "unit": "rad",
+    "mapping": {
+        "targets": [
+        { "joint": "hand_thumb_dip", "weight": 1.0 }
+      ]
+    },
+    "description": "thumb DIP maps to hand_thumb_dip"
+  },
+  "index_radial_flexor": {
+    "min": 0.0,
+    "max": 3.14,
+    "default": 0.0,
+    "unit": "rad",
+    "mapping": {
+      "targets": [
+        { "joint": "hand_index_mcp_2", "weight": 0.6 },
+        { "joint": "hand_index_pip", "weight": 0.4 }
+      ]
+    },
+    "description": "Used together with index_ulnar_flexor to compute index MCP/PIP"
+  },
+  "index_ulnar_flexor": {
+    "min": -3.14,
+    "max": 0.0,
+    "default": 0.0,
+    "unit": "rad",
+    "mapping": {
+      "targets": [
+        { "joint": "hand_index_mcp_2", "weight": 0.5 },
+        { "joint": "hand_index_pip", "weight": 0.5 }
+      ]
+    },
+    "description": "Used together with index_radial_flexor to compute index MCP/PIP"
+  },
+  "index_pip_dip": {
+    "min": 0.0,
+    "max": 1.0,
+    "default": 0.0,
+    "unit": "rad",
+    "mapping": {
+        "targets": [
+        { "joint": "hand_index_dip_1", "weight": 1.0 }
+      ]
+    },
+    "description": "Maps to hand_index_dip_1"
+  },
+  "middle_radial_flexor": {
+    "min": 0.0,
+    "max": 3.14,
+    "default": 0.0,
+    "unit": "rad",
+    "mapping": {
+      "targets": [
+        { "joint": "hand_middle_mcp_2", "weight": 0.6 },
+        { "joint": "hand_middle_pip", "weight": 0.4 }
+      ]
+    }
+  },
+  "middle_ulnar_flexor": {
+    "min": -3.14,
+    "max": 0.0,
+    "default": 0.0,
+    "unit": "rad",
+    "mapping": {
+      "targets": [
+        { "joint": "hand_middle_mcp_2", "weight": 0.5 },
+        { "joint": "hand_middle_pip", "weight": 0.5 }
+      ]
+    }
+  },
+  "middle_pip_dip": {
+    "min": 0.0,
+    "max": 1.0,
+    "default": 0.0,
+    "unit": "rad",
+    "mapping": {
+        "targets": [
+        { "joint": "hand_middle_dip_1", "weight": 1.0 }
+      ]
+    }
+  },
+  "ring_radial_flexor": {
+    "min": 0.0,
+    "max": 3.14,
+    "default": 0.0,
+    "unit": "rad",
+    "mapping": {
+      "targets": [
+        { "joint": "hand_ring_mcp_2", "weight": 0.6 },
+        { "joint": "hand_ring_pip", "weight": 0.4 }
+      ]
+    }
+  },
+  "ring_ulnar_flexor": {
+    "min": -3.14,
+    "max": 0.0,
+    "default": 0.0,
+    "unit": "rad",
+    "mapping": {
+      "targets": [
+        { "joint": "hand_ring_mcp_2", "weight": 0.5 },
+        { "joint": "hand_ring_pip", "weight": 0.5 }
+      ]
+    }
+  },
+  "ring_pip_dip": {
+    "min": 0.0,
+    "max": 1.0,
+    "default": 0.0,
+    "unit": "rad",
+    "mapping": {
+        "targets": [
+        { "joint": "hand_ring_dip_1", "weight": 1.0 }
+      ]
+    }
+  },
+  "pinky_radial_flexor": {
+    "min": 0.0,
+    "max": 3.14,
+    "default": 0.0,
+    "unit": "rad",
+    "mapping": {
+      "targets": [
+        { "joint": "hand_pinky_mcp_2", "weight": 0.6 },
+        { "joint": "hand_pinky_pip", "weight": 0.4 }
+      ]
+    }
+  },
+  "pinky_ulnar_flexor": {
+    "min": -3.14,
+    "max": 0.0,
+    "default": 0.0,
+    "unit": "rad",
+    "mapping": {
+      "targets": [
+        { "joint": "hand_pinky_mcp_2", "weight": 0.5 },
+        { "joint": "hand_pinky_pip", "weight": 0.5 }
+      ]
+    }
+  },
+  "pinky_pip_dip": {
+    "min": 0.0,
+    "max": 1.0,
+    "default": 0.0,
+    "unit": "rad",
+    "mapping": {
+        "targets": [
+        { "joint": "hand_pinky_dip_1", "weight": 1.0 }
+      ]
+    }
+  }
+}
