@@ -16,7 +16,7 @@ git clone https://github.com/song-jisu/hopejr_state_publisher.git
 
 Modify `view_robot.launch.py`
 ```shell
-cd src/hopejr_state_publisher
+cd src/hopejr_state_publisher/hopejr_state_publisher
 python3 modify_hopejr_right_arm_description.py
 ```
 
